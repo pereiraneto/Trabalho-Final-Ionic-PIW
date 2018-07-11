@@ -1,0 +1,30 @@
+<ion-header>
+
+<ion-navbar>
+  <ion-title>Cadastre-se</ion-title>
+</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-input (input)="nome=nameField.value" #nameField  type="text" placeholder="Name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input (input)="email=emailField.value" #emailField type="email" placeholder="Email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input (input)="senha=senhaField.value" #senhaField type="password" placeholder="Senha"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button color="secondary" (click)="cadastrar()">Cadastrar</button>
+
+
+</ion-content>
